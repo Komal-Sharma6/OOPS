@@ -2,13 +2,11 @@ class Tester {
     public static void main (String[] args){
 
         //Object for Customer class
-        Customer customer = new Customer();
-        customer.customerID="C101";
-        customer.customerName="Stephen Abram";
-        customer.contactNumber =1234565131L;
-        customer.customerAddress="12 Bihar Colony";
+        Customer customer1 = new Customer("C101","Stephen Abram",1234565131L,"12 Bihar Colony");
 
-        customer.displayCustomerDetails();
+        Customer customer2 = new Customer();
+
+        customer1.displayCustomerDetails();
 
         //object for Food class
         Food food1 = new Food();

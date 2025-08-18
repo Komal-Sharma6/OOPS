@@ -6,6 +6,18 @@ class Customer {
     public String customerAddress;
     public long contactNumber;
 
+    Customer (String cId,String cName, long contact, String address){
+        System.out.println("Parametrized Costructor Called");
+        customerID=cId;
+        customerName=cName;
+        contactNumber=contact;
+        customerAddress= address;
+
+    }
+    Customer (){
+        System.out.println("Non-Parametrized Constructor Called");
+    }
+
    public void displayCustomerDetails(){
        System.out.println("Displaying customer details \n***********");
        System.out.println("Customer ID: "+ customerID);

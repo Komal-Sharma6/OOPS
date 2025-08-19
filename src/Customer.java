@@ -17,6 +17,11 @@ class Customer {
     Customer (){
         System.out.println("Non-Parametrized Constructor Called");
     }
+    Customer(String name, long contact, String address){
+        customerName=name;
+        contactNumber=contact;
+        customerAddress=address;
+    }
 
    public void displayCustomerDetails(){
        System.out.println("Displaying customer details \n***********");

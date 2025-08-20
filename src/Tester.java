@@ -49,5 +49,14 @@ class Tester {
         Restaurant restaurant1 = new Restaurant("Paradise",6737569l,"Mumbai Andheri", 4.1f);
         restaurant1.displayRestaurantDetails();
 
+        //Object for Guest class
+
+        Guest guest1 = new Guest("C1005","Adam",8548913647l,"California",50);
+        guest1.displayCustomerDetails();
+
+        //Object for RegularCustomer class
+
+        RegularCustomer regularCustomer1 = new RegularCustomer("C1006","Anand",9867665598l,"Andheri Mumbai",5.0f);
+        regularCustomer1.displayCustomerDetails();
     }
 }

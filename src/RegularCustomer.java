@@ -12,4 +12,9 @@ public class RegularCustomer extends Customer{
     public void setDiscount(float discount){
         this.discount=discount;
     }
+    @Override
+    public void payBill(double price, double discountPercentage){
+           double totalPrice = (price *(1-0.05))*95/100;
+           System.out.println("Total Price:"+totalPrice);
+    }
 }

@@ -31,4 +31,20 @@ class Customer {
        System.out.println("Customer Address: "+customerAddress);
        System.out.println();
    }
+    public void payBill(double price, double discountPercentage){
+        double totalPrice= price*(1-(discountPercentage/100));
+        System.out.println("Total Payable Amount: "+ totalPrice);
+        System.out.println();
+
+    }
+
+   public void updateDetails(long mobile){
+        System.out.println("Updating Contact");
+        this.contactNumber=mobile;
+   }
+
+   public void updateDetails(String address){
+        System.out.println("Updating Address");
+        this.customerAddress=address;
+   }
 }

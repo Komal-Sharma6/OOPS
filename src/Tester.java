@@ -2,10 +2,13 @@ class Tester {
     public static void main (String[] args){
 
         //Object for Customer class
-        Customer customer1 = new Customer("C101","Stephen Abram",1234565131L,"12 Bihar Colony");
+       Customer customer1 = new Customer("C101","Stephen Abram",1234565131L,"12 Bihar Colony");
         customer1.displayCustomerDetails();
 
-        Customer customer2 = new Customer();
+        Customer customer2 = new Customer("C1008","PRIYA",46178517L,"JAMNAGAR");
+
+        customer2.updateDetails("Madurai");
+        customer2.updateDetails(64678909l);
         customer2.displayCustomerDetails();
 
         Customer customer3 = new Customer("Priya", 7362678L, "Sodala");
@@ -58,5 +61,7 @@ class Tester {
 
         RegularCustomer regularCustomer1 = new RegularCustomer("C1006","Anand",9867665598l,"Andheri Mumbai",5.0f);
         regularCustomer1.displayCustomerDetails();
+        regularCustomer1.payBill(1000,5);
+
     }
 }

@@ -7,7 +7,7 @@ class Customer {
     public long contactNumber;
 
     Customer (String cId,String cName, long contact, String address){
-        System.out.println("Parametrized Costructor Called");
+        System.out.println("Parametrized Constructor Called");
         customerID=cId;
         customerName=cName;
         contactNumber=contact;
